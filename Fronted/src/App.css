@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(159, 213, 238);
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 80%;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.add-user button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.user-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+}
+
+.user-card-info {
+  max-width: 100%;
+}
+
+.user-card h3 {
+  margin: 0;
+  max-width: 100%;
+  font-size: 1.2em;
+}
+
+.user-card p {
+  font-size: 0.9em;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .user-cards {
+    flex-direction: column;
+  }
+
+  .user-card {
+    width: 100%;
+  }
+}
